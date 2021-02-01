@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask, request, render_template, send_file
 from fpdf import FPDF
 
@@ -27,4 +29,5 @@ def handle_data():
 
 
 if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5001))
     app.run(host='0.0.0.0', port=5001)
