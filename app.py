@@ -16,6 +16,11 @@ def handle_data():
     fio = request.form['FIO']
     dob = request.form['DOB']
     pol = request.form['POL']
+    nac = request.form['NAC']
+    edu = request.form['EDU']
+    prof = request.form['PROF']
+    num = request.form['NUM']
+
     pdf = FPDF(orientation='P', unit='mm', format='A4')
     pdf.add_font('Times', '', 'times.ttf', uni=True)
     pdf.add_font('Times', 'B', 'timesbd.ttf', uni=True)
