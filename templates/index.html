@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>ООО "Рога и копыта"</title>
+</head>
+<body>
+<div class="cleanslate w24tz-current-time w24tz-small" style="display: inline-block !important; visibility: hidden !important; min-width:200px !important; min-height:100px !important;"><p><a href="//24timezones.com/%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3/%D0%B2%D1%80%D0%B5%D0%BC%D1%8F" style="text-decoration: none" class="clock24" id="tz24-1612158377-c1358-eyJob3VydHlwZSI6IjI0Iiwic2hvd2RhdGUiOiIxIiwic2hvd3NlY29uZHMiOiIxIiwiY29udGFpbmVyX2lkIjoiY2xvY2tfYmxvY2tfY2I2MDE3OTVhOTBkNGJhIiwidHlwZSI6ImRiIiwibGFuZyI6InJ1In0=" title="Екатеринбург часы" target="_blank" rel="nofollow">Местное время:</a></p><div id="clock_block_cb601795a90d4ba"></div></div>
+<script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+   <h1>Анкета приёма на работу:</h1>
+
+ <form action="{{ url_for('handle_data') }}" method="post">
+				<input type="text" name="FIO" id="FIO" placeholder="ФИО"/>
+     <p></p>
+				<input type="text" name="DOB" id="DOB" placeholder="Дата рождения:"/>
+      <p></p>Пол:
+                    <select name="POL" id="POL">
+                    <option>Мужской</option>
+                    <option>Женский</option>
+                    </select>
+     <p></p>
+                <input type="text" name="NAC" id="NAC" placeholder="Национальность"/>
+     <p></p>
+                <input type="text" name="EDU" id="EDU" placeholder="Образование"/>
+     <p></p>
+                <input type="text" name="TRUD" id="TRUD" placeholder="Трудовой стаж"/>
+     <p></p>
+                <input type="text" name="PROF" id="PROF" placeholder="Профессиональные навыки"/>
+     <p></p>
+                <input type="text" name="NUM" id="NUM" placeholder="Номер телефона:"/>
+     <p></p>
+				<input type="submit" value="Отправить" />
+ </form>
+</body>
+</html>
